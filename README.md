@@ -1,3 +1,4 @@
+# Contrastive Learning for Practical Synthetic Data Generation Using Seasonal and Trend Representations
 ## Implementation
 1. Download the datasets and place them in `CoST-main/datasets`
 2. For training, run `pip install -r requirements.txt` on terminal followed by:
