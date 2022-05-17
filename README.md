@@ -1,4 +1,4 @@
-## implementation
+## Implementation
 1. Download the datasets and place them in `CoST-main/datasets`
 2. For training, run `pip install -r requirements.txt` on terminal followed by:
      * mendeley : `python -u train.py mendeley forecast_multivar --alpha 0.0005 --kernels 1 2 4 8 16 32 64 128 --max-train-length 201 --batch-size 128 --archive forecast_csv --repr-dims 320 --max-threads 8 --seed 2 --eval --epochs 400`
