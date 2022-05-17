@@ -1,3 +1,9 @@
+## Implimentation
+1. Download the datasets and place them in `CoST-main/datasets`
+2. For training, run `pip install -r requirements.txt` on terminal followed by:
+     * mendeley : `python -u train.py mendeley forecast_multivar --alpha 0.0005 --kernels 1 2 4 8 16 32 64 128 --max-train-length 201 --batch-size 128 --archive forecast_csv --repr-dims 320 --max-threads 8 --seed 2 --eval --epochs 400`
+     * calce : `python -u train.py dataset4 forecast_dataset4 --alpha 0.0005 --kernels 1 2 4 8 16 32 64 128 --max-train-length 201 --batch-size 128 --archive forecast_csv_univar --repr-dims 320 --max-threads 8 --eval --epochs 400`
+
 ## Acknowledgments
 We would like to thank the contributors of the original [CoST](https://github.com/salesforce/CoST) repository and the authors of the paper titled [CONTRASTIVE LEARNING OF DISENTANGLED SEASONAL-TREND REPRESENTATIONS FOR TIME SERIES FORECASTING](https://openreview.net/pdf?id=PilZY3omXV2)  
   
@@ -6,8 +12,10 @@ Additionally we would like to mention that the being used is sourced from:
 2. [calce](https://web.calce.umd.edu/batteries/data.htm)
   
   
- ## Citations
- @inproceedings{
+ ## <span id="citelink">Citation</span>
+
+```
+@inproceedings{
     woo2022cost,
     title={Co{ST}: Contrastive Learning of Disentangled Seasonal-Trend Representations for Time Series Forecasting},
     author={Gerald Woo and Chenghao Liu and Doyen Sahoo and Akshat Kumar and Steven Hoi},
@@ -15,3 +23,4 @@ Additionally we would like to mention that the being used is sourced from:
     year={2022},
     url={https://openreview.net/forum?id=PilZY3omXV2}
 }
+```
